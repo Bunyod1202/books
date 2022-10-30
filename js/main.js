@@ -16,7 +16,7 @@ const bookmarkArray = JSON.parse(localStorage.getItem("bukmark")) ||[]
 let bokmark = 0
 //2 createElement/////////////////////////////////////////////////////////////////
 function crateList(arr,titleRegex = "") {
-  // elList.innerHTML = ""
+  elList.innerHTML = ""
   arr.forEach(function (item) {
     let clonedTemplate = eltemplate.cloneNode(true)
     ++bokmark
