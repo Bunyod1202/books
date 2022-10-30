@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Books</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+
+<header class="header-innar">
+  <div class="container">
+    <div class="serch-box d-flex align-items-center justify-content-between mt-5">
+      <a href="./index.html">
+        <img width="300px" src="./icons/book-store-logo-design-template-free-vector.png" alt="">
+      </a>
+      <form class="form form-search input-group w-25 mx-auto"  autocomplete="off">
+        <input class="search form-control" name="search" type="text" >
+        <button class="btn btn-info" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</header>
+
+
+<main>
+  <section>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-md-3  ">
+          <form class="form res-form position-sticky"  autocomplete="off">
+            <select class="form-select select-all mt-5">
+              <option value="All">All</option>
+              <option value="Az">A->Z</option>
+              <option value="Za">Z->A</option>
+              <option value="yft">year from to</option>
+              <option value="ytf">year to from </option>
+              <option value="pft">pages from to</option>
+              <option value="ptf">pages to from</option>
+            </select>
+            <div class="input-group mt-4">
+              <input class="input-pages-start form-control" placeholder="from" type="number">
+              <input class="input-pages-finish form-control" placeholder="to" type="number">
+            </div>
+            <select class="form-select mt-4 select-lenguage" >
+              <option value="All" >Language all</option>
+            </select>
+            <button type="submit" class="btn btn-info mt-4 w-100">Filter</button>
+          </form>
+          <h2 class="text-center mt-3">Bookmarc</h2>
+          <ul class="booklist mt-4"></ul>
+        </div>
+        <div class="col-md-9">
+          <ul class="list d-flex justify-content-between flex-wrap">
+           <img class="w-100" src="./icons/2eebea62556223.5a945f059d2a8.png" alt="">
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <template class="list-template">
+    <li class="card mb-4">
+      <button type="button" class="bokmark"></button>
+      <img class="card-img card-img-top" src="" alt="">
+      <h3 class="card-title"></h3>
+      <div class="card-box d-flex align-content-center justify-content-between">
+       <div class="d-flex align-items-center"><img width="20"  height="20" src="./icons/alarm-clock.png" alt="clock"> <p class="card-year"></p></div>
+        <div class="d-flex align-items-center"><img height="20" width="20" src="./icons/files.png" alt="files"><p class="card-page"></p></div>
+       <div class="d-flex align-items-center"> <img height="20" width="20" src="./icons/globe.png" alt=""><p class="card-lenguage"></p></div>
+      </div>
+      <p class="card-author mt-2"></p>
+     <div class="pad d-flex align-items-center">
+      <img height="20" width="20" src="./icons/paper-clip.png" alt="clip"><a class="card-link" href="">In detail</a>
+     </div>
+    </li>
+  </template>
+
+  <!-- scripts -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="/js/books.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
